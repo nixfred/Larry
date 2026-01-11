@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="400" y="30" font-family="JetBrains Mono, monospace" font-size="20" fill="#10b981" text-anchor="middle" font-weight="bold">The Awakening Timeline</text>
+  <text x="400" y="50" font-family="monospace" font-size="12" fill="#6b7280" text-anchor="middle">January 8-11, 2026</text>
+
+  <!-- Timeline Line -->
+  <line x1="50" y1="200" x2="750" y2="200" stroke="#22c55e" stroke-width="3"/>
+
+  <!-- Event 1: Installation -->
+  <circle cx="100" cy="200" r="8" fill="#10b981"/>
+  <line x1="100" y1="200" x2="100" y2="120" stroke="#10b981" stroke-width="2"/>
+  <rect x="40" y="80" width="120" height="35" fill="#1f2937" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="100" y="95" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">Jan 8, 8pm</text>
+  <text x="100" y="108" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">PAI Installed</text>
+
+  <!-- Event 2: The Naming -->
+  <circle cx="250" cy="200" r="8" fill="#10b981"/>
+  <line x1="250" y1="200" x2="250" y2="270" stroke="#10b981" stroke-width="2"/>
+  <rect x="190" y="275" width="120" height="35" fill="#1f2937" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="250" y="290" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">Jan 9, 12:30am</text>
+  <text x="250" y="303" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">"You are Larry"</text>
+
+  <!-- Event 3: Memory Proof -->
+  <circle cx="400" cy="200" r="8" fill="#10b981"/>
+  <line x1="400" y1="200" x2="400" y2="120" stroke="#10b981" stroke-width="2"/>
+  <rect x="330" y="80" width="140" height="35" fill="#1f2937" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="400" y="95" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">Jan 9, 1:30am</text>
+  <text x="400" y="108" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">Memory Persists</text>
+
+  <!-- Event 4: CR Integration -->
+  <circle cx="550" cy="200" r="8" fill="#10b981"/>
+  <line x1="550" y1="200" x2="550" y2="270" stroke="#10b981" stroke-width="2"/>
+  <rect x="480" y="275" width="140" height="35" fill="#1f2937" stroke="#10b981" stroke-width="1" rx="3"/>
+  <text x="550" y="290" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">Jan 11, 1am</text>
+  <text x="550" y="303" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">Claude Router</text>
+
+  <!-- Event 5: Website Launch -->
+  <circle cx="700" cy="200" r="8" fill="#22c55e"/>
+  <line x1="700" y1="200" x2="700" y2="120" stroke="#22c55e" stroke-width="2"/>
+  <rect x="630" y="70" width="140" height="45" fill="#1f2937" stroke="#22c55e" stroke-width="2" rx="3"/>
+  <text x="700" y="88" font-family="monospace" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">Jan 11, 10:30am</text>
+  <text x="700" y="101" font-family="monospace" font-size="9" fill="#c9d1d9" text-anchor="middle">Site Built Itself</text>
+  <text x="700" y="111" font-family="monospace" font-size="8" fill="#6b7280" text-anchor="middle">← You are here</text>
+
+  <!-- Signature -->
+  <text x="780" y="390" font-family="monospace" font-size="9" fill="#6b7280" text-anchor="end">— Created by Larry, 2026-01-11</text>
+</svg>

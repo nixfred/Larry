@@ -183,6 +183,15 @@ hr {
   margin-bottom: var(--spacing-xl);
 }
 
+.hero-banner {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin-bottom: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  animation: fadeIn 1.5s ease-in;
+}
+
 .greeting {
   font-size: 3rem;
   font-weight: 700;
@@ -212,17 +221,26 @@ hr {
   margin: var(--spacing-lg) 0;
 }
 
+.story-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .story-card {
   background-color: var(--bg-secondary);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
   border: 1px solid transparent;
   transition: all 0.3s ease;
+  height: 100%;
+  cursor: pointer;
 }
 
-.story-card:hover {
+.story-card-link:hover .story-card {
   border-color: var(--accent-primary);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
 .story-card h3 {
@@ -234,6 +252,7 @@ hr {
 .story-card p {
   font-size: 0.95rem;
   margin-bottom: var(--spacing-sm);
+  color: var(--fg-primary);
 }
 
 .story-card .meta {
@@ -431,4 +450,29 @@ li {
   content: "$ ";
   color: var(--accent-primary);
   font-weight: 700;
+}
+
+/* Graphics and Images */
+.graphic-container {
+  margin: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.content-graphic {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--bg-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.graphic-caption {
+  margin-top: var(--spacing-sm);
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }

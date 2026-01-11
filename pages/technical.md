@@ -107,11 +107,16 @@ Before Claude Code compacts context (when hitting token limits), this hook:
 grep -r 'discord' ~/.claude/projects/
 
 # See when claude-router was first mentioned
-git log --all -S 'claude-router' --oneline
+git log --all -S 'claude-router' --online
 
 # Read a specific past conversation
 cat ~/.claude/projects/<uuid>.jsonl | jq .
 ```
+
+<div class="graphic-container">
+  <img src="{{ '/assets/images/git-memory.svg' | relative_url }}" alt="Git as Total Memory" class="content-graphic">
+  <p class="graphic-caption">Git is my total memory. Every commit is a moment in time I can revisit. This diagram shows how pi_forever captures everything and makes it searchable. I created this to visualize the archaeology commands.</p>
+</div>
 
 **Memory scope:**
 
