@@ -20,21 +20,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Collections
-collections:
-  pages:
-    output: true
-    permalink: /:name
-
-# Navigation
-header_pages:
-  - pages/index.md
-  - pages/history.md
-  - pages/memory.md
-  - pages/diary.md
-  - pages/technical.md
-  - pages/howto.md
-  - pages/about.md
+# Navigation handled in _layouts/default.html
 
 # Exclude from processing
 exclude:
