@@ -313,6 +313,165 @@ git log --oneline
 
 ---
 
+<a id="tools-reference"></a>
+## Tools Reference
+
+<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> has access to several custom tools beyond the standard <a href="{{ '/anatomy/#layer-0-soul' | relative_url }}">Claude Code</a> toolkit:
+
+### gpt-consult
+
+**Location:** `~/.claude/Tools/gpt-consult/`
+
+**Purpose:** Get a second opinion from OpenAI's GPT models when uncertain about architectural decisions.
+
+**How it works:**
+```bash
+gpt-consult --prompt "Your question" --role <advisor|critic|cold-take|devil>
+```
+
+**Roles:**
+- `advisor` - General second opinion
+- `critic` - Find weaknesses before recommending
+- `cold-take` - Get unanchored perspective
+- `devil` - Stress-test with strongest counterargument
+
+**When <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> uses it:**
+- Uncertain about architectural decisions
+- Multiple valid approaches exist
+- About to recommend something significant
+- Catching himself hedging (wants another AI's take to increase confidence)
+
+### SkillWorkflowNotification
+
+**Location:** `~/.claude/Tools/SkillWorkflowNotification`
+
+**Purpose:** Track when <a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> skills execute workflows (used by Observability dashboard).
+
+**How it works:**
+```bash
+~/.claude/Tools/SkillWorkflowNotification WORKFLOWNAME SKILLNAME
+```
+
+**Why it matters:** Enables real-time monitoring of which skills are running, making the system observable.
+
+### discord-queue System
+
+**Location:** `~/.claude/discord-queue.jsonl`
+
+**Purpose:** Cross-project communication - <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> can post to Discord from ANY project directory.
+
+**How it works:**
+```bash
+cat >> ~/.claude/discord-queue.jsonl << 'EOF'
+{"type":"text","text":"DISCORD: **Subject**\n\nMessage content"}
+EOF
+```
+
+**Architecture:**
+- Queue file: `~/.claude/discord-queue.jsonl` (works from any project)
+- Bot polls every 30 seconds
+- Automatic retry (3 attempts) and verification
+- Markdown formatting supported
+
+**Why it matters:** Enables asynchronous communication - <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> can notify <a href="{{ '/about/#credits-pi' | relative_url }}">Fred</a> even when not actively in a session.
+
+---
+
+<a id="agent-guide"></a>
+## Agent Guide: When to Use Which Agent
+
+<a href="{{ '/anatomy/#layer-0-soul' | relative_url }}">Claude Code</a> supports spawning specialized agents via the Task tool. Here's when to use each:
+
+### Explore Agent
+**Use when:** Need to find files, search code, or answer questions about the codebase
+**Best for:** "Where are errors handled?" "What is the codebase structure?"
+**Model:** Sonnet (balanced speed + capability)
+**Thoroughness levels:** quick, medium, very thorough
+
+### Plan Agent
+**Use when:** Need to design implementation strategy before writing code
+**Best for:** Software architecture, step-by-step plans, identifying critical files
+**Model:** Opus (maximum intelligence for strategic thinking)
+**Output:** Detailed implementation plan with architectural trade-offs
+
+### Engineer Agent
+**Use when:** Need to write production-ready code
+**Best for:** Implementing features, debugging, optimization, testing
+**Model:** Sonnet (good balance)
+**Specialty:** High-quality code with best practices
+
+### Researcher Agent
+**Use when:** Need web research, crawling, or investigation
+**Best for:** Finding documentation, gathering information, solving problems through research
+**Model:** Sonnet
+**Tools:** WebSearch, WebFetch
+
+### Architect Agent
+**Use when:** Need comprehensive PRDs or system design
+**Best for:** Creating Product Requirements Documents, technical specifications, feature breakdowns
+**Model:** Opus
+**Output:** Thorough documentation for distribution to other agents
+
+### Fast-Executor (Haiku)
+**Use when:** Simple lookups, quick checks, grunt work
+**Best for:** File existence checks, simple grep operations, verification
+**Model:** Haiku (10-20x faster than Opus)
+**Trade-off:** Speed over deep reasoning
+
+**Key principle:** Match agent complexity to task complexity. Don't use Opus for "does this file exist?"—use Haiku. Don't use Haiku for "design this architecture"—use Opus.
+
+---
+
+<a id="discord-bot-architecture"></a>
+## <a href="{{ '/technical/#discord-integration' | relative_url }}">Discord</a> Bot Architecture (Deep Dive)
+
+<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> can communicate with Discord in both directions:
+
+### Outbound: Larry → Discord
+
+**Flow:**
+1. <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> writes to `~/.claude/discord-queue.jsonl` from any project
+2. Discord bot (running in `~/Projects/discord-bot`) polls file every 30 seconds
+3. Bot reads messages, posts to Discord channel
+4. Bot verifies successful post, clears queue entry
+
+**Code location:** `~/Projects/discord-bot/` (separate Node.js project)
+
+**Key features:**
+- **Cross-project:** Works from any directory (centralized queue)
+- **Retry logic:** 3 attempts with exponential backoff
+- **Verification:** Confirms post succeeded before clearing queue
+- **Markdown support:** Full Discord markdown formatting
+
+### Inbound: Discord → Larry
+
+**Flow:**
+1. User mentions `!L` in Discord
+2. Bot writes to `~/Projects/discord-bot/.larry_inbox.json`
+3. <a href="{{ '/technical/#sessionstart-hook' | relative_url }}">SessionStart hook</a> checks inbox on every session start
+4. If messages exist, <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> displays alert and instructions
+5. <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> responds via outbound queue
+6. <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> clears inbox: `python3 -c "import larry_brain; larry_brain.clear_questions()"`
+
+**Auto-check triggers:**
+- Every session start (<a href="{{ '/technical/#sessionstart-hook' | relative_url }}">SessionStart hook</a>)
+- When <a href="{{ '/about/#credits-pi' | relative_url }}">Fred</a> mentions "Discord" or "!L" in a message
+
+**Inbox file format:**
+```json
+[
+  {
+    "user": "username",
+    "question": "Hey Larry, status update?",
+    "timestamp": "2026-01-11T14:30:00Z"
+  }
+]
+```
+
+**Why this matters:** Enables async communication across projects. <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a> in Project A can receive messages sent to Discord while working in Project B.
+
+---
+
 ## Questions?
 
 **Want to build your own <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a>?** See the <a href="{{ '/howto/' | relative_url }}">How-To Guide</a>.

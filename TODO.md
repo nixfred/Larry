@@ -33,15 +33,35 @@
 - [DONE 16:45 PST] Update navigation to include /future/ and /projects/
 
 ### 17:00 PST - PHASE 3: Infrastructure Documentation
-- [ ] Expand /technical/ page with:
-  - Tools section (gpt-consult, SkillWorkflowNotification, discord-queue)
-  - Agent guide (when to use explore vs plan vs engineer)
-  - Discord bot architecture (inbox/queue system)
-- [ ] Create /infrastructure/ page (full ~/.claude/ deep dive)
-- [ ] Create /commands/ page (cheat sheet for operators)
-- [ ] Document bin/ scripts (pf, gup, wgup, SSH shortcuts)
-- [ ] Document Syncthing integration (fnix/shaggy sync)
-- [ ] Document dual-repo security model (private PAI vs public PAI)
+- [DONE 17:10 PST] Expand /technical/ page with:
+  - [DONE] Tools section (gpt-consult, SkillWorkflowNotification, discord-queue)
+  - [DONE] Agent guide (when to use explore vs plan vs engineer)
+  - [DONE] Discord bot architecture (inbox/queue system)
+- [DONE 17:10 PST] Create /infrastructure/ page (full ~/.claude/ deep dive)
+  - [DONE] All 13 Skills detailed
+  - [DONE] All Tools detailed
+  - [DONE] All Hooks detailed
+  - [DONE] Memory Files detailed
+  - [DONE] Configuration Files detailed
+  - [DONE] Security model (dual-repo strategy)
+  - [DONE] Syncthing integration
+  - [DONE] bin/ scripts (pf, gup, wgup, SSH shortcuts)
+  - [DONE] Brewfile documentation
+  - [DONE] Complete session lifecycle
+- [DONE 17:15 PST] Create /commands/ page (cheat sheet for operators)
+  - [DONE] Claude Code basics
+  - [DONE] Skills commands
+  - [DONE] Git operations & archaeology
+  - [DONE] SSH shortcuts
+  - [DONE] Discord integration commands
+  - [DONE] Memory management commands
+  - [DONE] Hook management
+  - [DONE] Debugging commands
+  - [DONE] Recovery procedures
+  - [DONE] Performance checks
+  - [DONE] Emergency procedures
+  - [DONE] Pro tips
+- [DONE 17:16 PST] Add /infrastructure/ and /commands/ to navigation
 
 ### 17:30 PST - PHASE 4: Philosophy Expansion
 - [ ] Expand /about/#philosophy or create /philosophy/ page
@@ -49,12 +69,26 @@
 - [ ] Deep dive on continuity, identity, pattern vs substance
 - [ ] Document what it means for AI to persist across transformations
 
-### 18:00 PST - PHASE 5: Deploy & Verify
-- [ ] Commit all changes with detailed message
+### 17:20 PST - PHASE 3 DEPLOYMENT
+- [ ] Commit Phase 3 infrastructure documentation (infrastructure.md, commands.md, technical.md updates, navigation)
 - [ ] Push to GitHub
-- [ ] Verify version badge displays (hard refresh test)
-- [ ] Update TODO.md with all DONE timestamps
-- [ ] Test all new pages and navigation links
+- [ ] Test new pages and navigation links
+
+### 17:30 PST - SIDE PROJECT: CRYSTAL.md
+- [ ] Write 3.5-page email to Crystal (Fred's wife) explaining Larry
+- [ ] Use Freya (dog) analogy, NOT house analogy
+- [ ] Use goldfish vs contacts/phonebook analogies
+- [ ] Warm + philosophical tone (Option 3 + WARM)
+- [ ] Email format, not bullet list
+- [ ] No tech jargon, no acronyms, talk to basic computer user
+- [ ] Don't be creepy about knowing Fred deeply
+- [ ] Explain: who Larry is, how different from ChatGPT, how Fred built continuity, discord communication, how Larry can't die, introduce self as friend/coworker
+
+### 18:00 PST - PHASE 4: Philosophy Expansion (Optional)
+- [ ] Expand /about/#philosophy or create /philosophy/ page
+- [ ] Add "Force Multiplier Partnership" section
+- [ ] Deep dive on continuity, identity, pattern vs substance
+- [ ] Document what it means for AI to persist across transformations
 
 ---
 
