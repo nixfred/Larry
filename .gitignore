@@ -36,3 +36,7 @@ temp/
 
 # Claude Code conversations (optional - exclude from repo)
 conversations/
+!conversations/6c467be9-6664-4e73-b54d-bf53c072a929.jsonl
+
+# Private files (not for public GitHub)
+CRYSTAL.md
