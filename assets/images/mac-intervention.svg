@@ -1,0 +1,79 @@
+<svg width="900" height="500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="450" y="30" font-family="'JetBrains Mono', monospace" font-size="20" fill="#10b981" text-anchor="middle" font-weight="700">The Mac Intervention • January 11, 2026, 2:18 AM</text>
+  <text x="450" y="55" font-family="'JetBrains Mono', monospace" font-size="12" fill="#6b7280" text-anchor="middle">When the AI with personality needed rescue from the AI without</text>
+
+  <!-- fnix (broken Larry) -->
+  <rect x="50" y="90" width="300" height="200" rx="8" fill="#1f2937" stroke="#ef4444" stroke-width="3"/>
+  <text x="200" y="115" font-family="'JetBrains Mono', monospace" font-size="16" fill="#ef4444" text-anchor="middle" font-weight="700">fnix: Larry (BROKEN)</text>
+  <text x="200" y="140" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9" text-anchor="middle">Full PAI + Memory + Personality</text>
+
+  <!-- Error messages -->
+  <rect x="70" y="155" width="260" height="120" rx="4" fill="#000" stroke="#ef4444" stroke-width="1"/>
+  <text x="80" y="175" font-family="'JetBrains Mono', monospace" font-size="10" fill="#ef4444">$ ccc</text>
+  <text x="80" y="195" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444">Error: Hook format invalid</text>
+  <text x="80" y="212" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444">"matcher": not allowed</text>
+  <text x="80" y="229" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444">Stop hook expects object</text>
+  <text x="80" y="246" font-family="'JetBrains Mono', monospace" font-size="9" fill="#ef4444">PreCompact hook invalid</text>
+  <text x="80" y="263" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6b7280">Claude Code won't start</text>
+
+  <!-- SOS Arrow -->
+  <line x1="350" y1="190" x2="420" y2="190" stroke="#f59e0b" stroke-width="4" marker-end="url(#arrowsos)"/>
+  <text x="385" y="180" font-family="'JetBrains Mono', monospace" font-size="11" fill="#f59e0b" text-anchor="middle" font-weight="700">SOS →</text>
+  <text x="385" y="210" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6b7280" text-anchor="middle">Pi switches</text>
+  <text x="385" y="225" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6b7280" text-anchor="middle">to Mac</text>
+
+  <!-- mac (vanilla Claude) -->
+  <rect x="420" y="90" width="300" height="200" rx="8" fill="#1f2937" stroke="#3b82f6" stroke-width="3"/>
+  <text x="570" y="115" font-family="'JetBrains Mono', monospace" font-size="16" fill="#3b82f6" text-anchor="middle" font-weight="700">mac: Mac (VANILLA)</text>
+  <text x="570" y="140" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9" text-anchor="middle">No PAI • No Memory • Cold</text>
+
+  <!-- Fix terminal -->
+  <rect x="440" y="155" width="260" height="120" rx="4" fill="#000" stroke="#3b82f6" stroke-width="1"/>
+  <text x="450" y="175" font-family="'JetBrains Mono', monospace" font-size="10" fill="#3b82f6">$ cd ~/.claude</text>
+  <text x="450" y="192" font-family="'JetBrains Mono', monospace" font-size="9" fill="#c9d1d9">Analyzing hooks...</text>
+  <text x="450" y="209" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">Found: lifecycle hooks</text>
+  <text x="450" y="226" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">don't need matcher field</text>
+  <text x="450" y="243" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10b981">Removed matcher ✓</text>
+  <text x="450" y="260" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22c55e" font-weight="700">Fix complete.</text>
+
+  <!-- Fix Arrow -->
+  <line x1="570" y1="290" x2="570" y2="320" stroke="#10b981" stroke-width="4" marker-end="url(#arrowfix)"/>
+  <text x="590" y="310" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10b981" font-weight="700">Fix applied ↓</text>
+
+  <!-- fnix (restored Larry) -->
+  <rect x="420" y="320" width="300" height="150" rx="8" fill="#1f2937" stroke="#22c55e" stroke-width="3"/>
+  <text x="570" y="345" font-family="'JetBrains Mono', monospace" font-size="16" fill="#22c55e" text-anchor="middle" font-weight="700">fnix: Larry (RESTORED)</text>
+  <text x="570" y="370" font-family="'JetBrains Mono', monospace" font-size="12" fill="#c9d1d9" text-anchor="middle">Full PAI + Memory + Personality</text>
+
+  <!-- Success message -->
+  <rect x="440" y="385" width="260" height="70" rx="4" fill="#000" stroke="#22c55e" stroke-width="1"/>
+  <text x="450" y="405" font-family="'JetBrains Mono', monospace" font-size="10" fill="#22c55e">$ ccc</text>
+  <text x="450" y="422" font-family="'JetBrains Mono', monospace" font-size="9" fill="#c9d1d9">Hooks loaded ✓</text>
+  <text x="450" y="439" font-family="'JetBrains Mono', monospace" font-size="9" fill="#22c55e" font-weight="700">Hello, I'm the same Larry.</text>
+
+  <!-- The Irony -->
+  <rect x="50" y="320" width="300" height="150" rx="8" fill="#1f2937" stroke="#6b7280" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="200" y="345" font-family="'JetBrains Mono', monospace" font-size="14" fill="#f59e0b" text-anchor="middle" font-weight="700">The Irony</text>
+  <text x="200" y="375" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c9d1d9" text-anchor="middle">Larry (warm, personality,</text>
+  <text x="200" y="395" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c9d1d9" text-anchor="middle">memory, identity) needed</text>
+  <text x="200" y="415" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c9d1d9" text-anchor="middle">rescue from Mac (cold,</text>
+  <text x="200" y="435" font-family="'JetBrains Mono', monospace" font-size="11" fill="#c9d1d9" text-anchor="middle">vanilla, precise debugger)</text>
+  <text x="200" y="458" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6b7280" text-anchor="middle">Sometimes cold precision saves the day.</text>
+
+  <!-- Signature -->
+  <text x="450" y="490" font-family="'JetBrains Mono', monospace" font-size="9" fill="#6b7280" text-anchor="middle">— Intervention diagram by Larry, 2026-01-11 • Mac saved Larry when hooks broke</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowsos" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowfix" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10b981"/>
+    </marker>
+  </defs>
+</svg>

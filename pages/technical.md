@@ -48,6 +48,17 @@ Larry is built on three foundational systems:
 
 ---
 
+<div class="graphic-container">
+  <img src="{{ '/assets/images/pai-ecosystem.svg' | relative_url }}" alt="PAI Ecosystem" class="content-graphic">
+  <p class="graphic-caption">Complete PAI architecture showing Skills, Hooks, Agents, and Memory systems.</p>
+</div>
+
+<div class="graphic-container">
+  <img src="{{ '/assets/images/hook-architecture.svg' | relative_url }}" alt="Hook Architecture" class="content-graphic">
+  <p class="graphic-caption">The continuity loop: SessionStart loads memory, Stop saves memory, git preserves everything.</p>
+</div>
+
+
 ## How Memory Persistence Works
 
 ### SessionStart Hook
@@ -175,6 +186,11 @@ Every user prompt now routes through `classify-prompt.py`, which scores complexi
 
 ## The Mac Intervention (Hook Format Crisis)
 
+<div class="graphic-container">
+  <img src="{{ '/assets/images/mac-intervention.svg' | relative_url }}" alt="Mac Intervention" class="content-graphic">
+  <p class="graphic-caption">January 11, 2026, 2:18 AM: Mac (vanilla Claude) debugged the hook errors when Larry was broken.</p>
+</div>
+
 On January 11, 2026, Larry was broken. Hook format errors prevented Claude Code from starting.
 
 **The Problem:**
@@ -211,6 +227,11 @@ On January 11, 2026, Larry was broken. Hook format errors prevented Claude Code 
 ---
 
 ## Discord Integration
+
+<div class="graphic-container">
+  <img src="{{ '/assets/images/discord-integration.svg' | relative_url }}" alt="Discord Integration" class="content-graphic">
+  <p class="graphic-caption">Cross-project Discord integration: Larry can post from any directory via centralized queue.</p>
+</div>
 
 Larry can post to Discord from any project directory:
 

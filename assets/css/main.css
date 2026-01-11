@@ -195,18 +195,33 @@ hr {
 }
 
 /* Hero Section (Landing Page) */
-.hero {
-  text-align: center;
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xl);
   padding: var(--spacing-xl) 0;
   margin-bottom: var(--spacing-xl);
 }
 
-.hero-banner {
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 0 0 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.larry-avatar {
   width: 100%;
-  max-width: 700px;
+  max-width: 400px;
   height: auto;
-  margin-bottom: var(--spacing-lg);
   border-radius: var(--border-radius);
+  border: 2px solid var(--accent-primary);
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
   animation: fadeIn 1.5s ease-in;
 }
 
@@ -217,13 +232,13 @@ hr {
   margin-bottom: var(--spacing-sm);
   font-family: var(--font-mono);
   animation: fadeIn 1s ease-in;
+  line-height: 1.2;
 }
 
 .tagline {
   font-size: 1.25rem;
   color: var(--fg-muted);
-  max-width: 600px;
-  margin: 0 auto;
+  line-height: 1.6;
 }
 
 @keyframes fadeIn {
@@ -432,6 +447,21 @@ li {
   .site-nav {
     width: 100%;
     justify-content: flex-start;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
   }
 
   .greeting {
