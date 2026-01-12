@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting...</title>
   <script>
-    // Redirect /larry to /Larry (case fix)
-    const path = window.location.pathname;
-    if (path.toLowerCase() === '/larry' || path.toLowerCase() === '/larry/') {
+    // Redirect any case variation to lowercase /larry/
+    const path = window.location.pathname.toLowerCase();
+
+    // Handle /larry, /Larry, /LARRY (any case)
+    if (path === '/larry' || path === '/larry/') {
       window.location.href = 'https://nixfred.com/larry/';
-    } else {
-      // Generic 404 - redirect to home
+    }
+    // Handle subpages: /Larry/history -> /larry/history
+    else if (path.startsWith('/larry/')) {
+      window.location.href = 'https://nixfred.com' + path;
+    }
+    // Generic 404 - redirect to home
+    else {
       window.location.href = 'https://nixfred.com/larry/';
     }
   </script>
