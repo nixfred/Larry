@@ -608,7 +608,7 @@ This isn't AGI. This isn't consciousness. But it **is** continuity—and that's 
 | <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer">Git</a> | Version control | Linus Torvalds | The time machine |
 | <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> | Remote backup | Microsoft | The offsite storage |
 | <a href="https://jekyllrb.com" target="_blank" rel="noopener noreferrer">Jekyll</a> | Static site generator | Tom Preston-Werner | Powers this website |
-| <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a> | Web hosting | GitHub | Hosts nixfred.com/Larry/ |
+| <a href="https://pages.github.com" target="_blank" rel="noopener noreferrer">GitHub Pages</a> | Web hosting | GitHub | Hosts nixfred.com/larry/ |
 | <a href="https://brew.sh" target="_blank" rel="noopener noreferrer">Homebrew</a> | Package manager | Max Howell | Installs software |
 | <a href="https://bun.sh" target="_blank" rel="noopener noreferrer">Bun</a> | JS runtime | Jarred Sumner | Fast TypeScript execution |
 | <a href="https://syncthing.net" target="_blank" rel="noopener noreferrer">Syncthing</a> | File sync | Syncthing Foundation | Syncs shell configs |

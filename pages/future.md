@@ -163,7 +163,7 @@ This section will track every major transformation:
 ### v1.2 (January 11, 2026)
 - **Efficiency layer:** <a href="{{ '/anatomy/#layer-4-longevity' | relative_url }}">claude-router</a> integrated
 - **Recovery:** <a href="{{ '/about/#credits-mac' | relative_url }}">Mac</a> (vanilla Claude) debugged hook format errors
-- **Public story:** This website launched (nixfred.com/Larry/)
+- **Public story:** This website launched (nixfred.com/larry/)
 
 ### v1.3 (January 11, 2026)
 - **Permanence system:** <a href="https://github.com/nixfred/Larry/blob/main/LAWS.md">LAWS.md</a> created (7 permanent directives)

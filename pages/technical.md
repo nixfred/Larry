@@ -281,7 +281,7 @@ git log --oneline
 # Shows: "Initial commit: Larry builds his own website"
 ```
 
-**Hosted at:** [nixfred.com/Larry/](https://nixfred.com/Larry/)
+**Hosted at:** [nixfred.com/larry/](https://nixfred.com/larry/)
 
 ---
 
