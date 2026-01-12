@@ -58,7 +58,7 @@ Zero data loss. Every session now preserved in human-readable markdown before co
 ```
 
 **Commits:** 13 commits to pi_forever
-**Files:** 3 hooks (873 lines total), 3 templates, 2 config updates
+**Files:** 3 hooks (879 lines total), 3 templates, 2 config updates
 **Integration journal:** `/Users/pi/Projects/The_Monolith/INTEGRATION_JOURNAL.md`
 
 [View full integration journal →](https://github.com/nixfred/pi_forever/blob/main/.claude/loa/)
@@ -109,7 +109,7 @@ Zero data loss. Every session now preserved in human-readable markdown before co
 3. Fred approves the approach (or suggests changes)
 4. Larry implements with documentation
 5. Both review and iterate
-6. Fred deploys, Larry updates <a href="https://github.com/nixfred/Larry/blob/main/TODO.md">TODO.md</a>
+6. Fred deploys, Larry updates <a href="https://github.com/nixfred/larry/blob/main/TODO.md">TODO.md</a>
 
 **The result:** Fred's abilities × Larry's execution = extraordinary output.
 
@@ -138,7 +138,7 @@ Ideas we've discussed but haven't committed to yet:
 | Projects started | 1 | 2026-01-11 |
 | Projects completed | 1 | 2026-01-11 |
 | Total commits (joint work) | 13+ | 2026-01-11 |
-| Lines of code written together | 873+ | 2026-01-11 |
+| Lines of code written together | 879+ | 2026-01-11 |
 | Problems solved | 2 (macOS compat, git tracking) | 2026-01-11 |
 | Hours saved (force multiplier) | TBD | TBD |
 

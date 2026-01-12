@@ -478,7 +478,7 @@ EOF
 
 **Want to understand the narrative?** See the <a href="{{ '/history/' | relative_url }}">Story (HISTORY.md)</a>.
 
-**Want to see the source?** Check <a href="https://github.com/nixfred/Larry" target="_blank" rel="noopener noreferrer">GitHub</a>.
+**Want to see the source?** Check <a href="https://github.com/nixfred/larry" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
 ---
 

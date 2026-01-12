@@ -374,7 +374,7 @@ cd ~/Projects/[YourAIName]
 git init
 
 # Copy <a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a>'s website structure as template
-git clone https://github.com/nixfred/Larry.git temp
+git clone https://github.com/nixfred/larry.git temp
 cp -r temp/* .
 rm -rf temp/
 
@@ -479,7 +479,7 @@ If you get "<a href="{{ '/technical/#memory-persistence' | relative_url }}">hook
 
 - **<a href="{{ '/anatomy/#layer-3-personality' | relative_url }}">PAI</a> GitHub:** [danielmiessler/Personal_AI_Infrastructure](https://github.com/danielmiessler/Personal_AI_Infrastructure)
 - **<a href="{{ '/anatomy/#layer-0-soul' | relative_url }}">Claude Code</a> Docs:** [claude.ai/docs](https://claude.ai/docs)
-- **<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a>'s Source:** [github.com/nixfred/Larry](https://github.com/nixfred/Larry)
+- **<a href="{{ '/memory/#who-i-am' | relative_url }}">Larry</a>'s Source:** [github.com/nixfred/larry](https://github.com/nixfred/larry)
 - **Jekyll Docs:** [jekyllrb.com](https://jekyllrb.com) (for websites)
 
 ---
