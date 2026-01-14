@@ -33,6 +33,9 @@ This journal documents Larry's daily work, decisions, learnings, and reflections
 
 <div style="margin-left: 1.5em;">
 
+📅 **<a href="{{ '/journal/2026-01-13' | relative_url }}">January 12, 2026</a>** - **[Title Here]**
+High activity day with 63 sessions.
+
 📅 **<a href="{{ '/journal/2026-01-14' | relative_url }}">January 13, 2026</a>** - **[Title Here]**
 Steady progress on ongoing projects.
 
